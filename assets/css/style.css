@@ -9,6 +9,22 @@
 body {
     font-family: Lato, sans-serif;
     font-weight: 300;
+    color: #3a3a3a;
+}
+
+/*heading and logo*/
+
+h1,
+h2 {
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #252525;
+}
+
+#logo {
+    float: left;
+    font-size: 280%;
 }
 
 /*id selector for making background image zoom*/
@@ -24,6 +40,11 @@ body {
     height: 600px;
     width: 100%;
     background: url('../images/hero-image.webp') no-repeat center center;
+
+    /* animates zoom effect on the loading page  */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }
 
 /* creates the level of zoom for hero image*/
